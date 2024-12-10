@@ -1,65 +1,85 @@
-html {
-    scroll-behavior: smooth;
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
-body {
-    margin: 20px;
-    padding: 0;
-}
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} */
 /* disign */
 
 /* Hero header */
-section {
+/* section {
     font-family: sans-serif;
+} */
+#home_id {
+    position: relative;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
-header {
+/* header {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-}
-header img {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: fixed;
+    backdrop-filter: blur(100px);
+    z-index: 10;
+} */
+/* header img {
     max-width: 150px;
-}
-header .links a {
+} */
+.header_links_a {
     text-decoration: none;
-    font-size: 20px;
     margin: 15px;
     color: #339999;
 }
-header .links a:hover {
+.header_links_a_hover {
     color: rgba(0, 0, 0, 0.829);
 }
-button {
+.button_nohover {
     background-color:#339999;
-    padding: 10px;
+    /* padding: 10px; */
     color: aliceblue;
-    border-radius: 20px;
-    border: none;
+    /* border-radius: 20px; */
+    /* border: none; */
 }
-button:hover {
+.button_hover {
     color: fffff;
     background-color: #1a5050d8;
     cursor: pointer;
 }
-.heroHeaders {
+/* .heroHeaders {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.heroHeaders img {
+    padding-top: 160px;
+} */
+/* .heroHeaders img {
     max-width: 1000px;
-}
-.heroHeaders p {
+} */
+/* .heroHeaders p {
     font-size: 30px;
     margin: 5px;
-}
-.heroHeaders button {
+} */
+/* .heroHeaders button {
     font-size: 15px;
     border-radius: 30px;
     padding: 15px;
     margin-top: 30px;
-}
-span {
+} */
+/* .heroHeaders button a {
+    color: #fff;
+} */
+.span_color {
     color: #ff9933;
 }
 .filigrame {
@@ -78,19 +98,19 @@ span {
 }
 
 /* Services */
-.services {
+/* .services {
     text-align: center;
     padding: 50px 20px;
-}
+} */
 
-.service-container {
+/* .service-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-}
+} */
 
-.service {
+/* .service {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -99,7 +119,7 @@ span {
     width: 300px;
     box-sizing: border-box;
     text-align: center;
-}
+} */
 
 .service img {
     max-width: 100px;
@@ -128,13 +148,9 @@ p {
 }
 
 /* contact */
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 .contacte{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,13 +161,12 @@ p {
 
 .hk{
     width: 420px;
-    background: rgba(255, 249, 249, 0.767);
+    background: rgba(255, 249, 249, 0.897);
     color: white;
-    border-radius: 10px;
-    padding: 30px 60px;
-    border: 2px solid rgba(255, 255, 255, .2);
+    /* padding: 30px 60px; */
+    /* border: 2px solid rgba(255, 255, 255, .2); */
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(118, 110, 110, 0.2);
+    /* box-shadow: 0 0 10px rgba(118, 110, 110, 0.2); */
 }
 .hk h2{
     font-size: 30px;
@@ -170,9 +185,9 @@ p {
     
     margin: 10px 0;
 }
-.G-solutech input{
-     width: 100%;
-     height: 100%;
+.G-solutech_input{
+     /* width: 100%;
+     height: 100%; */
      background: rgba(202, 201, 201, 0.509);
      border: none;
      outline: none;
@@ -180,13 +195,12 @@ p {
      border-radius: 10px;
      font-size: 16px;
      padding: 10px 35px 10px 10px;
-     margin-left: 30px;
 }
 
 
-.Go-solutech textarea{
-    width: 100%;
-    height: 100%;
+.Go-solutech_textarea{
+    /* width: 100%;
+    height: 100%; */
     background: rgba(202, 201, 201, 0.509);
     border: none;
     outline: none;
@@ -194,16 +208,11 @@ p {
     border-radius: 10px;
     padding: 3%;
     font-size: 16px;
-    margin-left: 30px;
 }
-.G-solutech input::placeholder{
+/* .Go-solutech_textarea::placeholder{
     color: rgb(129, 124, 124);
-}
-.G-solutech textarea::placeholder{
-    color:rgb(129, 124, 124);
-}
-.hk .bouton{
-    width: 50%;
+} */
+.hk_bouton{
     height: 35px;
     background: #339999;
     border: none;
@@ -213,19 +222,11 @@ p {
     font-size: 15px;
     color: white;
     font-weight: 500;
-    margin-left: 30px;
 }
 .contacte img{
     width: 20%;
     margin-left: -450px;
     position: absolute;
-}
-.textarea-fixe{
-    width: 300px;
-    height: 150px;
-    resize: none;
-    padding: 10px;
-    box-sizing: border-box;
 }
 /* footer */
 
