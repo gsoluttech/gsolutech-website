@@ -1,117 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="G-SoluTech propose des solutions de gestion innovantes pour les entreprises. Découvrez nos services de conception mobile, web et desktop.">
+    <meta name="keywords" content="G-SoluTech, solutions de gestion, conception mobile, conception web, conception desktop">
+    <meta name="author" content="G-SoluTech">
     <title>G-SoluTech</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./src/image/gsolutech.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/main.css">
 </head>
-<body>
-    <!-- hero header-->
-    <section>
-        <header>
-            <img src="./src/image/logo.png" alt="logo">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">Service</a>
-                <a href="#">Contact</a>
-                <a href="#">FAQ</a>
-            </div>
-            <button>Prendre Rendez-vous</button>
+<body class="font-sans antialiased">
+    <!-- Hero Header -->
+    <section id="home_id" class="relative items-center justify-center">
+        <header class="flex items-center justify-between my-8 mx-8 fixed backdrop-filter backdrop-blur-3xl w-11/12 z-10">
+            <img src="./src/image/logo.png" alt="Logo de G-SoluTech" class="h-36 relative">
+            <nav class="flex gap-4">
+                <a href="#home_id" class="hover:text-gray-600 header_links_a font-sans font-medium text-xl">Accueil</a>
+                <a href="#service_id" class="hover:text-gray-600 header_links_a font-sans font-medium text-xl">Services</a>
+                <a href="#contact_id" class="hover:text-gray-600 header_links_a font-sans font-medium text-xl">Contacts</a>
+                <a href="#faq_id" class="hover:text-gray-600 header_links_a font-sans font-medium text-xl">FAQ</a>
+            </nav>
+            <button class="p-2 rounded-3xl button_nohover text-md hover:bg-button_hover">
+                <a href="#contact_id">Prendre Rendez-vous</a>
+            </button>
         </header>
-        <div class="heroHeaders">
-            <p>Transformez la gestion de votre <span>entreprise</span> avec</p>
-            <p><span>G-SoluTech</span> des solutions innovantes pour</p>
-            <p><span>embarquer</span>, <span>payer</span>, <span>assurer</span>, et<span> soutenir</span></p>
-            <p>vos équipes avec facilité.</p>
-            <button>Prendre Rendez-vous</button>
-            <img src="./src/image/bg_header.png" alt="bg_header">
+
+        <div class="text-gray-600 text-center py-3 relative pt-52">
+            <h1 class="text-3xl font-normal">Transformez la gestion de votre <span class="span_color font-normal">entreprise</span> avec</h1>
+            <h2 class="text-3xl mt-4"><span class="span_color">G-SoluTech</span>, des solutions innovantes pour</h2>
+            <h3 class="text-3xl mt-2"><span class="span_color">optimiser</span>, <span class="span_color">connecter</span> et <span class="span_color">soutenir</span> </h3>
+            <h4 class="text-3xl mt-2">vos équipes avec facilité.</h4>
+            <button class="p-3 rounded-3xl button_nohover hover:bg-button_hover mt-16 px-3">
+                <a href="#contact_id">Prendre Rendez-vous</a>
+            </button>
+            <img src="./src/image/bg_header.png" alt="Illustration de G-SoluTech" class="mt-3 mx-auto max-w-screen-md">
         </div>
-        <div class="filigrame">
-            <img src="./src/image/Microsoft-logo_rgb_c-gray 1.png" alt="Microsoft-logo_rgb_c-gray">
-            <img src="./src/image/logo-facebook-transparent 1.png" alt="logo-facebook-transparent">
-            <img src="./src/image/pinterest 1.png" alt="pinterest">
-            <img src="./src/image/0_N1fmHtI8gmkH_2Vu 1.png" alt="">
-            <img src="./src/image/images-removebg-preview 1.png" alt="">
+
+        <div class="flex justify-center gap-8 py-8">
+            <img src="./src/image/Microsoft-logo_rgb_c-gray 1.png" alt="Logo Microsoft" class="h-10">
+            <img src="./src/image/logo-facebook-transparent 1.png" alt="Logo Facebook" class="h-10">
+            <img src="./src/image/pinterest 1.png" alt="Logo Pinterest" class="h-10">
+            <img src="./src/image/0_N1fmHtI8gmkH_2Vu 1.png" alt="Logo Partenaire" class="h-10">
+            <img src="./src/image/images-removebg-preview 1.png" alt="Logo Partenaire" class="h-10">
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="service_id" class="py-16 bg-white">
+        <h1 class="text-4xl font-bold text-center text-black">Nos Services</h1>
+        <div class="flex flex-row md:grid-cols-3 gap-8 mt-12 px-8 align-center justify-center">
+            <article class="text-center p-4 shadow-lg rounded bg-white w-72">
+                <img src="./src/image/png three.png" alt="Conception Mobile" class="h-20 mx-auto">
+                <h2 class="text-2xl font-semibold mt-4">Conception Mobile</h2>
+                <p class="mt-2">Créez des expériences fluides pour vos utilisateurs avec des applications mobiles intuitives et modernes.</p>
+            </article>
+            <article class="text-center p-4 shadow-lg rounded bg-white w-72">
+                <img src="./src/image/png one.png" alt="Conception Web" class="h-20 mx-auto">
+                <h2 class="text-2xl font-semibold mt-4">Conception Web</h2>
+                <p class="mt-2">Développez votre présence en ligne avec des sites web interactifs, adaptés à tous les appareils.</p>
+            </article>
+            <article class="text-center p-4 shadow-lg rounded bg-white w-72">
+                <img src="./src/image/png two.png" alt="Conception Desktop" class="h-20 mx-auto">
+                <h2 class="text-2xl font-semibold mt-4">Conception Desktop</h2>
+                <p class="mt-2">Optimisez vos processus d'entreprise grâce à des logiciels desktop performants et personnalisés.</p>
+            </article>
         </div>
     </section>
 
-    <!-- service -->
-    <section class="services">
-        <h1>Nos Services</h1>
-        <div class="service-container">
-            <div class="service">
-                <img src="/src/image/png three.png" alt="Conception Mobile">
-                <h2>Conception Mobile</h2>
-                <p>Réservez votre salle de fête en quelques clics ! Sur notre site mobile, trouvez et réservez la salle parfaite pour votre événement, où que vous soyez.</p>
+    <!-- Contact -->
+    <section id="contact_id" class="py-16 bg-white w-full relative">
+        <div class="w-10/12 mx-auto relative flex felx-row">
+            <div class="w-96 p-12 absolute left-80">
+                <img src="./src/image/solutech.png" alt="image" class="object-contain w-full h-full relative">
             </div>
-            <div class="service">
-                <img src="/src/image/png one.png" alt="Conception Web">
-                <h2>Conception Web</h2>
-                <p>Explorez notre gamme de salles de fêtes et planifiez votre événement en toute simplicité. Notre site web réactif vous permet de réserver la salle idéale, que vous naviguiez sur votre ordinateur de bureau, votre tablette ou votre téléphone.</p>
-            </div>
-            <div class="service">
-                <img src="/src/image/png two.png" alt="Conception Desktop">
-                <h2>Conception Desktop</h2>
-                <p>Découvrez notre sélection de salles de fêtes disponibles pour la réservation. Avec une interface conviviale sur desktop, parcourez les options et choisissez celle qui correspond le mieux à vos besoins.</p>
+            <div class="hk mx-auto relative border-2 border-solid border-gray-100 shadow-lg rounded-xl place-items-end">
+                <form action="" method="POST" class="p-8 flex flex-col w-9/12">
+                    <h2 class="text-2xl font-bold text-blue-900 mb-6">Discutons</h2>
+                    <label for="email" class="block text-gray-700">Votre Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email"  placeholder="example@gmail.com" required class="w-full p-2 border border-gray-300 rounded mt-2 text-black G-solutech_input">
+    
+                    <textarea id="message" name="message" cols="" rows="5" autocomplete="off" placeholder="Entrez le message..." required class="w-full p-2 border border-gray-300 rounded mt-2 text-black Go-solutech_textarea textarea_fixe"></textarea>
+    
+                    <button type="submit" class="mt-4 rounded-xl px-3 py-2 text-md hk_bouton">Envoyer message</button>
+                </form>
             </div>
         </div>
     </section>
-    <section class="contact">
-        <h2>Nous Contacter</h2>
-    </section>
 
-
-
-    <!-- contact -->
-
-<section class="contacte">
-    <div class="hk">
-        <form>
-            <h2>Let's talk</h2>
-            <p>Your Email</p>
-            <div class="G-solutech">
-                <input type="email" id="email" placeholder="@gmail.com">
-            </div>
-            <div class="Go-solutech">
-            <textarea class="textarea-fixe" name="" id="Message" cols="" rows="5" placeholder="Type something it you want....."></textarea>
-            </div>
-            <button type="submit" class="bouton">SEND MESSAGE</button>
-        </form>
-    </div>
-    <img src="src/image/solutech.png" alt="">
-</section>
-
-    <!--  footer -->
-
-    <footer>
-        <div class="part1">
-            <hr>
-            <img src="src/image/gsolutech.png" alt="">
-            <hr>
+    <!-- Footer -->
+    <footer class="text-black">
+        <div class="text-center">
+            <hr class="border-gray-600">
+            <img src="src/image/gsolutech.png" alt="Logo de G-SoluTech" class="h-12 mx-auto my-4">
+            <hr class="border-gray-600">
         </div>
-        <div class="part2">
+        <div class="flex flex-wrap justify-center gap-8 text-center">
             <div>
-                <p>PRIVACY POLICY TEAMS & CONDITIONS ABOUT</p>
+                <p><a href="#" class="hover:underline">Politique de Confidentialité</a> | <a href="#" class="hover:underline">Termes et Conditions</a> | <a href="#" class="hover:underline">À Propos</a></p>
             </div>
             <div>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <a href="#" class="text-xl hover:text-gray-300"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="text-xl hover:text-gray-300 ml-4"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-xl hover:text-gray-300 ml-4"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <div>
-                <p>SHIPPING INFO RETURNS / EXCHANGES CONTACT</p>
+                <p><a href="#" class="hover:underline">Infos Livraison</a> | <a href="#" class="hover:underline">Retours/Échanges</a> | <a href="#" class="hover:underline">Contact</a></p>
             </div>
         </div>
-        <div class="part3">
+        <div class="text-center mt-4">
             <i class="fa-solid fa-location-dot"></i>
-            <P>REPUBLIQUE DEMOCRATIQUE DU CONGO / NORD-KIVU / GOMA</P>
+            <p>République Démocratique du Congo / Kasai / Kananga</p>
         </div>
-        <div class="part4">
-            <label>&copy 2024 ALL RIGHT RESERVED</label>
+        <div class="text-center mt-4 text-sm">
+            <p>&copy; 2024 Tous droits réservés</p>
         </div>
     </footer>
+
 </body>
 </html>
